@@ -2,10 +2,10 @@
 
 Name:           wormsofprey-data
 Version:        20051221
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Data for worms of prey
 Group:          Amusements/Games
-License:        GPL
+License:        GPL+
 URL:            http://wormsofprey.org
 Source0:        http://wormsofprey.org/download/wopdata-%{real_version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -40,5 +40,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Jul 25 2008 Hans de Goede <j.w.r.degoede@hhs.nl> 20051221-2
+- Release bump for rpmfusion
+
 * Wed Aug  9 2006 Hans de Goede <j.w.r.degoede@hhs.nl> 20051221-1%{?dist}
 - Initial Fedora Extras package
