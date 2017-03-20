@@ -2,7 +2,7 @@
 
 Name:           wormsofprey-data
 Version:        20051221
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Data for worms of prey
 Group:          Amusements/Games
 License:        GPL+
@@ -40,6 +40,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Mar 20 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 20051221-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
+
 * Wed Feb 08 2012 Nicolas Chauvet <kwizart@gmail.com> - 20051221-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 
