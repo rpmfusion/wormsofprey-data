@@ -2,13 +2,12 @@
 
 Name:           wormsofprey-data
 Version:        20051221
-Release:        15%{?dist}
+Release:        16%{?dist}
 Summary:        Data for worms of prey
-Group:          Amusements/Games
-License:        GPL+
+License:        GPLv2+
 URL:            http://wormsofprey.org
 Source0:        http://wormsofprey.org/download/wopdata-%{real_version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+
 BuildArch:      noarch
 Requires:       wormsofprey >= 0.4.3
 
@@ -25,21 +24,18 @@ Data for the game worms of prey
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/wormsofprey
 cp -r * $RPM_BUILD_ROOT%{_datadir}/wormsofprey
 
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
-
 %files
-%defattr(-,root,root,-)
 %{_datadir}/wormsofprey/*
 
 
 %changelog
+* Sun Feb 19 2023 Leigh Scott <leigh123linux@gmail.com> - 20051221-16
+- Rebuilt
+
 * Wed Feb 09 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 20051221-15
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
